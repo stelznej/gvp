@@ -488,4 +488,88 @@ section {
         text-align: left; /* Keep list items left aligned even if container is centered */
         width: 100%;
     }
+
+}
+
+/* Donation Section Styles */
+.donation-grid {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.donation-card {
+    background: var(--color-white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    border-top: 5px solid var(--color-secondary);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.zelle-logo-img { height: 30px; }
+
+/* The Copy Email Component */
+.copy-box {
+    background: var(--color-light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+#zelle-id {
+    font-weight: 600;
+    color: var(--color-primary);
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+.copy-trigger {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.copy-trigger:hover {
+    background: var(--color-secondary);
+    transform: scale(1.05);
+}
+
+.qr-frame {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.qr-frame img {
+    max-width: 140px;
+    display: block;
+}
+
+.memo-note {
+    font-size: 0.85em;
+    color: var(--color-dark-gray);
+    font-style: italic;
 }
