@@ -52,38 +52,38 @@
         </div>
     </section>
 
-            <section id="donate" class="section-donate">
-                <div class="container">
-                    <h3>Support Our Mission: Make a Difference Today</h3>
-                    <p>Your generous contribution helps us expand our programs, educate more communities, and empower individuals to lead healthier lives. Every donation, big or small, creates a ripple effect towards a healthier, more vibrant world.</p>
+            <section id="donate" class="section-content section-alt-bg">
+    <div class="container">
+        <h2 class="section-title">Support Our Vision</h2>
+        <p class="section-subtitle">Your contribution directly funds nutrition programs and eye health initiatives globally.</p>
         
-                   <div class="donation-container">
-            <div class="zelle-box">
-                <h4>Donate via Zelle</h4>
-                <p>Send your tax-deductible gift to our registered email:</p>
-                
-                <div class="zelle-id">
-                    <span id="zelle-email">donations@globalvisionproject.org</span>
-                    <button class="btn-copy" onclick="copyZelle()">Copy Email</button>
+        <div class="donation-grid">
+            <div class="donation-card main-card">
+                <div class="card-header">
+                    <img src="images/zelle-logo.png" alt="Zelle" class="zelle-logo-img">
+                    <h3>Donate via Zelle</h3>
                 </div>
-        
-                <p class="small-text">Open your banking app, select Zelle, and paste the email above.</p>
+                <p>100% of your donation goes to our mission with zero processing fees.</p>
                 
-                <div class="qr-wrapper">
-                    <img src="images/zelle-qr.jpg" alt="Zelle QR Code" style="max-width: 150px;">
-                    <p class="small-text">Scanning from a desktop? Scan this code in your banking app.</p>
+                <div class="copy-box">
+                    <span id="zelle-id">donations@globalvisionproject.org</span>
+                    <button class="copy-trigger" onclick="copyZelle()" title="Copy to Clipboard">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    </button>
                 </div>
+                <p class="memo-note">Please include your email in the <strong>memo</strong> for a tax receipt.</p>
+            </div>
+
+            <div class="donation-card qr-card">
+                <h4>Scan to Give</h4>
+                <div class="qr-frame">
+                    <img src="images/zelle-qr.jpg" alt="Zelle QR Code">
+                </div>
+                <p class="small-text">Open your banking app to scan</p>
             </div>
         </div>
-        
-        <script>
-        function copyZelle() {
-          const email = document.getElementById('zelle-email').innerText;
-          navigator.clipboard.writeText(email);
-          alert("Email copied to clipboard!");
-        }
-        </script>
-    </section>
+    </div>
+</section>
 
     <footer class="main-footer">
         <div class="container">
@@ -103,4 +103,5 @@
 </body>
 
 </html>
+
 
