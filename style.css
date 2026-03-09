@@ -1,0 +1,491 @@
+/* Basic Resets & Global Styles */
+:root {
+    --color-primary: #1C4E5F; /* Dark Teal/Blue - main brand color */
+    --color-secondary: #5AC5CD; /* Light Blue/Aqua - accent */
+    --color-tertiary: #70C1B3; /* Green - secondary accent */
+    --color-white: #ffffff;
+    --color-light-gray: #f4f4f4;
+    --color-dark-gray: #333;
+    --color-text: #444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary);
+}
+
+.btn-secondary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.btn-donate {
+    background-color: var(--color-tertiary);
+    color: var(--color-white);
+    padding: 8px 15px; /* Slightly smaller for nav bar */
+}
+
+.btn-donate:hover {
+    background-color: #5bb0a3; /* A darker shade of tertiary */
+}
+
+/* Header */
+.main-header {
+    background-color: var(--color-white);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-light-gray);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    color: var(--color-primary);
+    margin-bottom: 0;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 25px;
+}
+
+.main-nav ul li a {
+    color: var(--color-dark-gray);
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+    position: relative;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: var(--color-secondary);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-bg-placeholder.jpg') no-repeat center center/cover;
+    color: var(--color-white);
+    text-align: center;
+    padding: 100px 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+    margin: 0 10px;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-mission {
+    background-color: var(--color-light-gray);
+}
+
+.section-donate {
+    background-color: var(--color-white);
+    padding: 80px 0;
+}
+
+.section-donate h3 {
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+.section-donate p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.donation-qr-code, .donation-form-placeholder {
+    background-color: var(--color-light-gray);
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.donation-qr-code h4, .donation-form-placeholder h4 {
+    color: var(--color-primary);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.qr-code {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 1px solid var(--color-light-gray); /* For visibility of placeholder */
+}
+
+.security-note {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 40px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-nav ul {
+    display: flex;
+}
+
+.footer-nav ul li {
+    margin-left: 20px;
+}
+
+.footer-nav ul li a {
+    color: var(--color-white);
+}
+
+.footer-nav ul li a:hover {
+    color: var(--color-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .hero-buttons .btn {
+        margin-bottom: 15px;
+    }
+
+    .main-footer .container {
+        flex-direction: column;
+    }
+
+    .footer-nav ul {
+        margin-top: 15px;
+    }
+
+    .footer-nav ul li {
+        margin: 0 10px;
+    }
+
+    .donation-options {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2em;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* Page Hero Section (for About, What We Do, Impact pages) */
+.page-hero {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    padding: 80px 0 60px;
+}
+
+.page-hero h2 {
+    font-size: 2.8em;
+    color: var(--color-white);
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* General Section Content Styling */
+.section-content {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-alt-bg {
+    background-color: var(--color-light-gray);
+}
+
+.section-content h3 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.section-content p {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+}
+
+/* Grid Layouts for Values, Strategies, Goals, Programs, Team, Achievements */
+.values-grid,
+.strategy-grid,
+.goals-grid,
+.program-grid,
+.team-grid,
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.value-item,
+.strategy-item,
+.goal-item,
+.program-item,
+.team-member,
+.achievement-item {
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: left; /* Align text left within grid items */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.value-item h4,
+.strategy-item h4,
+.goal-item h4,
+.program-item h4,
+.team-member h4,
+.achievement-item h4 {
+    color: var(--color-secondary);
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.value-item p,
+.strategy-item p,
+.goal-item p,
+.program-item p,
+.team-member p,
+.achievement-item p {
+    font-size: 0.95em;
+    color: var(--color-text);
+    margin-bottom: 10px;
+    text-align: left; /* Ensure text within items is left-aligned */
+}
+
+.strategy-item ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+    color: var(--color-text);
+}
+
+.strategy-item ul li {
+    margin-bottom: 5px;
+}
+
+/* Team Member Specific Styling (placeholders) */
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--color-tertiary);
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .page-hero h2 {
+        font-size: 2.2em;
+    }
+
+    .section-content h3 {
+        font-size: 1.8em;
+    }
+
+    .values-grid,
+    .strategy-grid,
+    .goals-grid,
+    .program-grid,
+    .team-grid,
+    .achievements-grid {
+        grid-template-columns: 1fr; /* Stack columns on small screens */
+    }
+
+    .value-item,
+    .strategy-item,
+    .goal-item,
+    .program-item,
+    .team-member,
+    .achievement-item {
+        text-align: center; /* Center content in stacked items */
+        align-items: center;
+    }
+
+    .strategy-item ul {
+        text-align: left; /* Keep list items left aligned even if container is centered */
+        width: 100%;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - The Global Vision Project Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/image_38b0fc.jpg" alt="Global Vision Project Foundation Logo" height="50">
+                </a>
+                <h1>The Global Vision Project Foundation</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="what-we-do.html">What We Do</a></li>
+                    <li><a href="our-impact.html">Our Impact</a></li>
+                    <li><a href="get-involved.html" class="active">Get Involved</a></li>
+                    <li><a href="#contact">Contact</a></li> <!-- Will be updated to contact.html later -->
+                    <li><a href="index.html#donate" class="btn btn-donate">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h2>Join Our Movement: Get Involved</h2>
+                <p>Your support, in any form, helps us build a healthier, more vibrant world.</p>
+            </div>
+        </section>
+
+        <section id="ways-to-support" class="section-content">
+            <div class="container">
+                <h3>Ways You Can Make a Difference</h3>
+                <p>Whether through a financial contribution, dedicating your time, or spreading our message, every action helps us achieve our mission.</p>
+                <div class="ways-grid">
+                    <div class="way-item">
+                        <h4>Donate</h4>
+                        <p>Your financial support directly fuels our programs, allowing us to reach more individuals and communities with vital health education.</p>
+                        <a href="index.html#donate" class="btn btn-primary">Donate Now</a>
+                    </div>
+                    <div class="way-item">
+                        <h4>Volunteer</h4>
+                        <p>Lend your skills and time to our initiatives. From assisting at workshops to helping with administrative tasks, volunteers are the heart of our foundation.</p>
+                        <p class="coming-soon"><em>Details on volunteer opportunities and application process coming soon!</em></p>
+                        <a href="#" class="btn btn-secondary disabled">Learn About Volunteering</a>
+                    </div>
+                    <div class="way-item">
+                        <h4>Partner / Sponsor</h4>
+                        <p>Organizations and businesses can collaborate with us through partnerships or sponsorships, amplifying our collective impact on community health.</p>
+                        <p class="coming-soon"><em>Information on partnership and sponsorship programs coming soon!</em></p>
+                        <a href="#" class="btn btn-secondary disabled">Explore Partnerships</a>
+                    </div>
+                    <div class="way-item">
+                        <h4>Spread the Word</h4>
+                        <p>Help us raise awareness! Share our mission with your friends, family, and social networks. Follow us on social media and share our updates.</p>
+                        <p class="coming-soon"><em>Links to our social media channels coming soon!</em></p>
+                        <a href="#" class="btn btn-secondary disabled">Connect on Social Media</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="call-to-action-bottom" class="section-content section-alt-bg">
+            <div class="container">
+                <h3>Ready to Make an Impact?</h3>
+                <p>We are excited to work with individuals and organizations who share our vision for a healthier world. Your involvement is crucial!</p>
+                <a href="index.html#donate" class="btn btn-primary">Make a Donation Today</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year-get-involved"></span> The Global Vision Project Foundation. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year-get-involved').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

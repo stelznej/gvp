@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Global Vision Project Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/image_38b0fc.jpg" alt="Global Vision Project Foundation Logo">
+                </a>
+                <h1>The Global Vision Project Foundation</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="what-we-do.html">What We Do</a></li>
+                    <li><a href="our-impact.html">Our Impact</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="#contact">Contact</a></li> <!-- Keep as # for now, will create page later -->
+                    <li><a href="index.html#donate" class="btn btn-donate">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Educating and Inspiring Healthier Lifestyles for a Better World</h2>
+                <p>Empowering individuals through health and clear vision to lead fulfilling lives and build thriving communities.</p>
+                <div class="hero-buttons">
+                    <a href="#donate" class="btn btn-primary">Donate Now</a>
+                    <a href="#about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission" class="section-mission">
+        <div class="container">
+            <h3>Our Mission</h3>
+            <p>Our mission is to educate and inspire individuals—children and adults alike—to achieve healthier lifestyles through balanced nutrition, active minds, and bodies. [cite_start]By fostering better health, we aim to empower people with clear vision, both physically and metaphorically, to lead fulfilling lives and build thriving communities. [cite: 4, 5]</p>
+        </div>
+    </section>
+
+    <section id="donate" class="section-donate">
+        <div class="container">
+            <h3>Support Our Mission: Make a Difference Today</h3>
+            <p>Your generous contribution helps us expand our programs, educate more communities, and empower individuals to lead healthier lives. Every donation, big or small, creates a ripple effect towards a healthier, more vibrant world.</p>
+
+            <div class="donation-options">
+                <div class="donation-qr-code">
+                    <h4>Scan to Donate Instantly</h4>
+                    <img src="images/qr-code-placeholder.png" alt="QR Code to Donate" class="qr-code">
+                    <p>Scan this QR code with your mobile device to be directed to our secure online donation portal.</p>
+                    <p><em>(Note: You will replace 'qr-code-placeholder.png' with your actual QR code image generated from your chosen payment gateway.)</em></p>
+                </div>
+                <div class="donation-form-placeholder">
+                    <h4>Donate Online</h4>
+                    <p>
+                        <em>(This is where an embedded donation form or a link to a dedicated donation page will go.)</em><br>
+                        For now, you can click the button below to simulate an external donation page.
+                    </p>
+                    <a href="https://example.com/your-donation-portal" target="_blank" class="btn btn-primary">Go to Donation Portal</a>
+                    <p><em>(You will replace `https://example.com/your-donation-portal` with the actual URL provided by your payment processor like Donorbox, PayPal, or Stripe.)</em></p>
+                </div>
+            </div>
+            <p class="security-note">All donations are securely processed. We are committed to transparency in how your funds are used to further our mission.</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> The Global Vision Project Foundation. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
