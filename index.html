@@ -83,6 +83,23 @@
             </div>
         </div>
     </div>
+
+                function copyZelle() {
+    const email = document.getElementById('zelle-id').innerText;
+    navigator.clipboard.writeText(email).then(() => {
+        const btn = document.querySelector('.copy-trigger');
+        const originalHTML = btn.innerHTML;
+        
+        // Visual feedback
+        btn.innerHTML = '✓';
+        btn.style.background = '#28a745';
+        
+        setTimeout(() => {
+            btn.innerHTML = originalHTML;
+            btn.style.background = '';
+        }, 2000);
+    });
+}
 </section>
 
     <footer class="main-footer">
@@ -101,7 +118,9 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
+    
 
 </html>
+
 
 
