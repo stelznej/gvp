@@ -52,30 +52,37 @@
         </div>
     </section>
 
-    <section id="donate" class="section-donate">
-        <div class="container">
-            <h3>Support Our Mission: Make a Difference Today</h3>
-            <p>Your generous contribution helps us expand our programs, educate more communities, and empower individuals to lead healthier lives. Every donation, big or small, creates a ripple effect towards a healthier, more vibrant world.</p>
-
-            <div class="donation-options">
-                <div class="donation-qr-code">
-                    <h4>Scan to Donate Instantly</h4>
-                    <img src="images/qr-code-placeholder.png" alt="QR Code to Donate" class="qr-code">
-                    <p>Scan this QR code with your mobile device to be directed to our secure online donation portal.</p>
-                    <p><em>(Note: Work in progress)</em></p>
+            <section id="donate" class="section-donate">
+                <div class="container">
+                    <h3>Support Our Mission: Make a Difference Today</h3>
+                    <p>Your generous contribution helps us expand our programs, educate more communities, and empower individuals to lead healthier lives. Every donation, big or small, creates a ripple effect towards a healthier, more vibrant world.</p>
+        
+                   <div class="donation-container">
+            <div class="zelle-box">
+                <h4>Donate via Zelle</h4>
+                <p>Send your tax-deductible gift to our registered email:</p>
+                
+                <div class="zelle-id">
+                    <span id="zelle-email">donations@globalvisionproject.org</span>
+                    <button class="btn-copy" onclick="copyZelle()">Copy Email</button>
                 </div>
-                <div class="donation-form-placeholder">
-                    <h4>Donate Online</h4>
-                    <p>
-                        <em>(This is where an embedded donation form or a link to a dedicated donation page will go.)</em><br>
-                        For now, you can click the button below to simulate an external donation page.
-                    </p>
-                    <a href="https://example.com/your-donation-portal" target="_blank" class="btn btn-primary">Go to Donation Portal</a>
-                    <p><em>(`https://example.com/your-donation-portal`)</em></p>
+        
+                <p class="small-text">Open your banking app, select Zelle, and paste the email above.</p>
+                
+                <div class="qr-wrapper">
+                    <img src="images/zelle-qr.jpg" alt="Zelle QR Code" style="max-width: 150px;">
+                    <p class="small-text">Scanning from a desktop? Scan this code in your banking app.</p>
                 </div>
             </div>
-            <p class="security-note">All donations are securely processed. We are committed to transparency in how your funds are used to further our mission.</p>
         </div>
+        
+        <script>
+        function copyZelle() {
+          const email = document.getElementById('zelle-email').innerText;
+          navigator.clipboard.writeText(email);
+          alert("Email copied to clipboard!");
+        }
+        </script>
     </section>
 
     <footer class="main-footer">
@@ -96,3 +103,4 @@
 </body>
 
 </html>
+
