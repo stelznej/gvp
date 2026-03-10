@@ -150,10 +150,12 @@ ul {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-bg-placeholder.jpg') no-repeat center center/cover;
-    color: var(--color-white);
-    text-align: center;
+    background: linear-gradient(rgba(28, 78, 95, 0.7), rgba(28, 78, 95, 0.7)), url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
     padding: 100px 0;
+    text-align: center;
     min-height: 500px;
     display: flex;
     align-items: center;
@@ -594,3 +596,4 @@ section {
     margin-bottom: 0; /* Align text vertically with the logo */
     font-size: 1.4rem;
 }
+
